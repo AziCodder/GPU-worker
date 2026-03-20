@@ -1,0 +1,13 @@
+# torch/torchaudio: on Vast install CUDA wheels first (see infra/vastai-onstart.sh) — cu121 for pytorch/cuda12.1 images
+torch==2.5.1
+torchaudio==2.5.1
+# 3.1.5 yanked; 3.4.x needs numpy>=2, torch>=2.5.1, transformers>=4.48 (see PyPI METADATA)
+whisperx==3.4.4
+numpy>=2.0.2,<3
+transformers>=4.48.0
+google-genai>=1.0.0
+boto3==1.34.144
+httpx==0.27.0
+python-dotenv==1.0.1
+pydantic-settings>=2.0.0
+structlog==24.4.0
